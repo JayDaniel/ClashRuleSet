@@ -64,6 +64,13 @@ DOMAIN-SUFFIX,grok.com
 #perplexity.ai
 DOMAIN-SUFFIX,perplexity.ai
 
+#apple ai
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.apple.com
 
 #bing chat
 DOMAIN-KEYWORD,bing

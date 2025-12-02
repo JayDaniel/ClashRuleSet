@@ -1,185 +1,185 @@
 # =========================================
-# Surge AI Ruleset (Updated)
-# 策略组名称: 🤖 AI Service
-# 更新内容: 新增 Warp, Zed, Antigravity, Kiro
+# Surge AI Ruleset (No Policy Group)
+# 适用于引用外部规则集 (RULE-SET)
 # =========================================
 
 # --- OpenAI (ChatGPT) ---
-DOMAIN-SUFFIX,chatgpt.com,🤖 AI Service
-DOMAIN-SUFFIX,openai.com,🤖 AI Service
-DOMAIN-SUFFIX,oaistatic.com,🤖 AI Service
-DOMAIN-SUFFIX,oaiusercontent.com,🤖 AI Service
-DOMAIN-SUFFIX,auth0.com,🤖 AI Service
-DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 AI Service
-DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 AI Service
-DOMAIN-SUFFIX,events.statsigapi.net,🤖 AI Service
-DOMAIN-SUFFIX,featuregates.org,🤖 AI Service
-DOMAIN-SUFFIX,identrust.com,🤖 AI Service
-DOMAIN-SUFFIX,intercom.io,🤖 AI Service
-DOMAIN-SUFFIX,intercomcdn.com,🤖 AI Service
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 AI Service
-DOMAIN-SUFFIX,sentry.io,🤖 AI Service
-DOMAIN-SUFFIX,chatgpt.livekit.cloud,🤖 AI Service
-DOMAIN-SUFFIX,host.livekit.cloud,🤖 AI Service
-DOMAIN-SUFFIX,turn.livekit.cloud,🤖 AI Service
-DOMAIN-KEYWORD,openai,🤖 AI Service
-DOMAIN-KEYWORD,chatgpt,🤖 AI Service
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,chatgpt
 
 # --- Claude (Anthropic) ---
-PROCESS-NAME,Claude,🤖 AI Service
-PROCESS-NAME,Claude Helper,🤖 AI Service
-DOMAIN-SUFFIX,anthropic.com,🤖 AI Service
-DOMAIN-SUFFIX,claude.ai,🤖 AI Service
-DOMAIN-SUFFIX,usefathom.com,🤖 AI Service
-DOMAIN-KEYWORD,claude,🤖 AI Service
+PROCESS-NAME,Claude
+PROCESS-NAME,Claude Helper
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,usefathom.com
+DOMAIN-KEYWORD,claude
 
 # --- Google Gemini / AI Studio / DeepMind ---
-DOMAIN-SUFFIX,gemini.google.com,🤖 AI Service
-DOMAIN-SUFFIX,bard.google.com,🤖 AI Service
-DOMAIN-SUFFIX,ai.google.dev,🤖 AI Service
-DOMAIN-SUFFIX,ai.google,🤖 AI Service
-DOMAIN-SUFFIX,aistudio.google.com,🤖 AI Service
-DOMAIN-SUFFIX,makersuite.google.com,🤖 AI Service
-DOMAIN-SUFFIX,deepmind.com,🤖 AI Service
-DOMAIN-SUFFIX,deepmind.google,🤖 AI Service
-DOMAIN-SUFFIX,generativeai.google,🤖 AI Service
-DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI Service
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🤖 AI Service
-DOMAIN-SUFFIX,notebooklm.google.com,🤖 AI Service
-DOMAIN-SUFFIX,notebooklm.google,🤖 AI Service
-DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,🤖 AI Service
-DOMAIN-SUFFIX,waa-pa.clients6.google.com,🤖 AI Service
-DOMAIN-KEYWORD,generativelanguage,🤖 AI Service
-DOMAIN-KEYWORD,colab,🤖 AI Service
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,ai.google
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-SUFFIX,antigravity.dev
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,waa-pa.clients6.google.com
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,colab
 
 # --- Microsoft Copilot / Bing AI ---
-DOMAIN-SUFFIX,copilot.microsoft.com,🤖 AI Service
-DOMAIN-SUFFIX,bing.com,🤖 AI Service
-DOMAIN-SUFFIX,bing.net,🤖 AI Service
-DOMAIN-SUFFIX,bingapis.com,🤖 AI Service
-DOMAIN-SUFFIX,edgeservices.bing.com,🤖 AI Service
-DOMAIN-SUFFIX,sydney.bing.com,🤖 AI Service
-DOMAIN-SUFFIX,www.bing.com,🤖 AI Service
-DOMAIN-SUFFIX,www.bingapis.com,🤖 AI Service
-DOMAIN-SUFFIX,platform.bing.com,🤖 AI Service
-DOMAIN-SUFFIX,bat.bing.com,🤖 AI Service
-DOMAIN-SUFFIX,r.bing.com,🤖 AI Service
-DOMAIN-SUFFIX,dict.bing.com.cn,🤖 AI Service
-DOMAIN-SUFFIX,business.bing.com,🤖 AI Service
-DOMAIN-KEYWORD,bing,🤖 AI Service
-DOMAIN-KEYWORD,copilot,🤖 AI Service
-DOMAIN-KEYWORD,edgeassetservice,🤖 AI Service
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,sydney.bing.com
+DOMAIN-SUFFIX,www.bing.com
+DOMAIN-SUFFIX,www.bingapis.com
+DOMAIN-SUFFIX,platform.bing.com
+DOMAIN-SUFFIX,bat.bing.com
+DOMAIN-SUFFIX,r.bing.com
+DOMAIN-SUFFIX,dict.bing.com.cn
+DOMAIN-SUFFIX,business.bing.com
+DOMAIN-KEYWORD,bing
+DOMAIN-KEYWORD,copilot
+DOMAIN-KEYWORD,edgeassetservice
 
 # --- Midjourney (Includes Discord) ---
-DOMAIN-SUFFIX,midjourney.com,🤖 AI Service
-DOMAIN-SUFFIX,discord.com,🤖 AI Service
-DOMAIN-SUFFIX,discordapp.com,🤖 AI Service
-DOMAIN-SUFFIX,discordapp.net,🤖 AI Service
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
 
 # --- Grok (xAI) ---
-PROCESS-NAME,grok,🤖 AI Service
-DOMAIN-SUFFIX,x.ai,🤖 AI Service
-DOMAIN-SUFFIX,grok.com,🤖 AI Service
-DOMAIN-KEYWORD,grok,🤖 AI Service
+PROCESS-NAME,grok
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-KEYWORD,grok
 
 # --- Perplexity ---
-DOMAIN-SUFFIX,perplexity.ai,🤖 AI Service
-DOMAIN-SUFFIX,pplx.ai,🤖 AI Service
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
 
-# --- AI Coding Tools (Cursor, Warp, Zed, Antigravity, Kiro, etc.) ---
+# --- AI Coding Tools (Warp, Zed, Kiro, Cursor, etc.) ---
 # Warp (Terminal)
-PROCESS-NAME,Warp,🤖 AI Service
-DOMAIN-SUFFIX,warp.dev,🤖 AI Service
+PROCESS-NAME,Warp
+DOMAIN-SUFFIX,warp.dev
 # Zed (Editor)
-PROCESS-NAME,Zed,🤖 AI Service
-DOMAIN-SUFFIX,zed.dev,🤖 AI Service
-# Antigravity (Google IDE)
-DOMAIN-SUFFIX,antigravity.google,🤖 AI Service
-DOMAIN-SUFFIX,antigravity.dev,🤖 AI Service
+PROCESS-NAME,Zed
+DOMAIN-SUFFIX,zed.dev
 # Kiro (AWS AI Editor)
-DOMAIN-SUFFIX,kiro.dev,🤖 AI Service
-DOMAIN-SUFFIX,kiro.ai,🤖 AI Service
+DOMAIN-SUFFIX,kiro.dev
+DOMAIN-SUFFIX,kiro.ai
+# Antigravity (Google)
+DOMAIN-SUFFIX,antigravity.google
 # Cursor / Windsurf / Trae / VS Code AI
-PROCESS-NAME,Cursor Helper,🤖 AI Service
-PROCESS-NAME,Cursor Helper (Plugin),🤖 AI Service
-PROCESS-NAME,Windsurf Helper,🤖 AI Service
-PROCESS-NAME,Windsurf Helper (Plugin),🤖 AI Service
-PROCESS-NAME,Trae Helper,🤖 AI Service
-PROCESS-NAME,Trae Helper (Plugin),🤖 AI Service
-PROCESS-NAME,language_server,🤖 AI Service
-PROCESS-NAME,language_server_macos_arm,🤖 AI Service
-PROCESS-NAME,copilot-language-server,🤖 AI Service
-DOMAIN-SUFFIX,cursor.com,🤖 AI Service
-DOMAIN-SUFFIX,cursor.sh,🤖 AI Service
-DOMAIN-SUFFIX,windsurf.com,🤖 AI Service
-DOMAIN-SUFFIX,codeium.com,🤖 AI Service
-DOMAIN-SUFFIX,marscode.com,🤖 AI Service
-DOMAIN-SUFFIX,trae.ai,🤖 AI Service
-DOMAIN-SUFFIX,openrouter.ai,🤖 AI Service
-DOMAIN-SUFFIX,githubcopilot.com,🤖 AI Service
-DOMAIN-SUFFIX,cocopilot.org,🤖 AI Service
+PROCESS-NAME,Cursor Helper
+PROCESS-NAME,Cursor Helper (Plugin)
+PROCESS-NAME,Windsurf Helper
+PROCESS-NAME,Windsurf Helper (Plugin)
+PROCESS-NAME,Trae Helper
+PROCESS-NAME,Trae Helper (Plugin)
+PROCESS-NAME,language_server
+PROCESS-NAME,language_server_macos_arm
+PROCESS-NAME,copilot-language-server
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,marscode.com
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,cocopilot.org
 
 # --- ByteDance AI / Oversea (Cici, TikTok, CapCut, Lemon8) ---
-PROCESS-NAME,Cici,🤖 AI Service
-PROCESS-NAME,TikTok,🤖 AI Service
-PROCESS-NAME,CapCut,🤖 AI Service
-PROCESS-NAME,Lemon8,🤖 AI Service
-DOMAIN-SUFFIX,ciciai.com,🤖 AI Service
-DOMAIN-SUFFIX,cici.com,🤖 AI Service
-DOMAIN-SUFFIX,byteoversea.com,🤖 AI Service
-DOMAIN-SUFFIX,tiktok.com,🤖 AI Service
-DOMAIN-SUFFIX,tiktokcdn.com,🤖 AI Service
-DOMAIN-SUFFIX,tiktokv.com,🤖 AI Service
-DOMAIN-SUFFIX,tiktokcdn-us.com,🤖 AI Service
-DOMAIN-SUFFIX,muscdn.com,🤖 AI Service
-DOMAIN-SUFFIX,musical.ly,🤖 AI Service
-DOMAIN-SUFFIX,capcut.com,🤖 AI Service
-DOMAIN-SUFFIX,capcutapi.com,🤖 AI Service
-DOMAIN-SUFFIX,lemon8-app.com,🤖 AI Service
-DOMAIN-SUFFIX,lemon8cdn.com,🤖 AI Service
-DOMAIN-SUFFIX,ibytedtos.com,🤖 AI Service
-DOMAIN-SUFFIX,ipstatp.com,🤖 AI Service
-DOMAIN-SUFFIX,zijieapi.com,🤖 AI Service
-DOMAIN-KEYWORD,ciciai,🤖 AI Service
-DOMAIN-KEYWORD,tiktok,🤖 AI Service
-DOMAIN-KEYWORD,lemon8,🤖 AI Service
+PROCESS-NAME,Cici
+PROCESS-NAME,TikTok
+PROCESS-NAME,CapCut
+PROCESS-NAME,Lemon8
+DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,cici.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,capcutapi.com
+DOMAIN-SUFFIX,lemon8-app.com
+DOMAIN-SUFFIX,lemon8cdn.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-KEYWORD,ciciai
+DOMAIN-KEYWORD,tiktok
+DOMAIN-KEYWORD,lemon8
 
 # --- AI Video & Music & Image (Suno, Udio, Runway, Luma, etc.) ---
-DOMAIN-SUFFIX,suno.com,🤖 AI Service
-DOMAIN-SUFFIX,suno.ai,🤖 AI Service
-DOMAIN-SUFFIX,udio.com,🤖 AI Service
-DOMAIN-SUFFIX,runwayml.com,🤖 AI Service
-DOMAIN-SUFFIX,lumalabs.ai,🤖 AI Service
-DOMAIN-SUFFIX,pika.art,🤖 AI Service
-DOMAIN-SUFFIX,pika.style,🤖 AI Service
-DOMAIN-SUFFIX,recraft.ai,🤖 AI Service
-DOMAIN-SUFFIX,krea.ai,🤖 AI Service
-DOMAIN-SUFFIX,leonardo.ai,🤖 AI Service
-DOMAIN-SUFFIX,civitai.com,🤖 AI Service
+DOMAIN-SUFFIX,suno.com
+DOMAIN-SUFFIX,suno.ai
+DOMAIN-SUFFIX,udio.com
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,lumalabs.ai
+DOMAIN-SUFFIX,pika.art
+DOMAIN-SUFFIX,pika.style
+DOMAIN-SUFFIX,recraft.ai
+DOMAIN-SUFFIX,krea.ai
+DOMAIN-SUFFIX,leonardo.ai
+DOMAIN-SUFFIX,civitai.com
 
 # --- Other AI Services ---
-DOMAIN-SUFFIX,huggingface.co,🤖 AI Service
-DOMAIN-SUFFIX,hf.co,🤖 AI Service
-DOMAIN-SUFFIX,mistral.ai,🤖 AI Service
-DOMAIN-SUFFIX,meta.ai,🤖 AI Service
-DOMAIN-SUFFIX,imagine.meta.com,🤖 AI Service
-DOMAIN-SUFFIX,poe.com,🤖 AI Service
-DOMAIN-SUFFIX,cerebras.ai,🤖 AI Service
-DOMAIN-SUFFIX,augmentcode.com,🤖 AI Service
-DOMAIN-SUFFIX,lmstudio.ai,🤖 AI Service
-PROCESS-NAME,LM Studio,🤖 AI Service
-DOMAIN-SUFFIX,apple-relay.cloudflare.com,🤖 AI Service
-DOMAIN-SUFFIX,apple-relay.fastly-edge.com,🤖 AI Service
-DOMAIN-SUFFIX,apple-relay.apple.com,🤖 AI Service
-DOMAIN-SUFFIX,guzzoni.apple.com,🤖 AI Service
-DOMAIN-SUFFIX,smoot.apple.com,🤖 AI Service
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,imagine.meta.com
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,cerebras.ai
+DOMAIN-SUFFIX,augmentcode.com
+DOMAIN-SUFFIX,lmstudio.ai
+PROCESS-NAME,LM Studio
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
 
 # --- Generic Google Infrastructure ---
-DOMAIN-SUFFIX,googleapis.com,🤖 AI Service
-DOMAIN-SUFFIX,clients6.google.com,🤖 AI Service
-DOMAIN-SUFFIX,gstatic.com,🤖 AI Service
-DOMAIN-SUFFIX,googleusercontent.com,🤖 AI Service
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,clients6.google.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
 
 # --- IP-CIDR Rules ---
-IP-CIDR,64.233.177.188/32,🤖 AI Service,no-resolve
-IP-CIDR,142.250.0.0/15,🤖 AI Service,no-resolve
+IP-CIDR,64.233.177.188/32,no-resolve
+IP-CIDR,142.250.0.0/15,no-resolve

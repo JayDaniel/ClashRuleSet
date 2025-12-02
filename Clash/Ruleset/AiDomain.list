@@ -1,297 +1,185 @@
-# 3rd part AI router
+# =========================================
+# Surge AI Ruleset (Updated)
+# 策略组名称: 🤖 AI Service
+# 更新内容: 新增 Warp, Zed, Antigravity, Kiro
+# =========================================
 
-DOMAIN-SUFFIX,cerebras.ai
+# --- OpenAI (ChatGPT) ---
+DOMAIN-SUFFIX,chatgpt.com,🤖 AI Service
+DOMAIN-SUFFIX,openai.com,🤖 AI Service
+DOMAIN-SUFFIX,oaistatic.com,🤖 AI Service
+DOMAIN-SUFFIX,oaiusercontent.com,🤖 AI Service
+DOMAIN-SUFFIX,auth0.com,🤖 AI Service
+DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 AI Service
+DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 AI Service
+DOMAIN-SUFFIX,events.statsigapi.net,🤖 AI Service
+DOMAIN-SUFFIX,featuregates.org,🤖 AI Service
+DOMAIN-SUFFIX,identrust.com,🤖 AI Service
+DOMAIN-SUFFIX,intercom.io,🤖 AI Service
+DOMAIN-SUFFIX,intercomcdn.com,🤖 AI Service
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 AI Service
+DOMAIN-SUFFIX,sentry.io,🤖 AI Service
+DOMAIN-SUFFIX,chatgpt.livekit.cloud,🤖 AI Service
+DOMAIN-SUFFIX,host.livekit.cloud,🤖 AI Service
+DOMAIN-SUFFIX,turn.livekit.cloud,🤖 AI Service
+DOMAIN-KEYWORD,openai,🤖 AI Service
+DOMAIN-KEYWORD,chatgpt,🤖 AI Service
 
-# 内容：OpenAi,claude,recraft,poe,bing,gemini,perplexity
+# --- Claude (Anthropic) ---
+PROCESS-NAME,Claude,🤖 AI Service
+PROCESS-NAME,Claude Helper,🤖 AI Service
+DOMAIN-SUFFIX,anthropic.com,🤖 AI Service
+DOMAIN-SUFFIX,claude.ai,🤖 AI Service
+DOMAIN-SUFFIX,usefathom.com,🤖 AI Service
+DOMAIN-KEYWORD,claude,🤖 AI Service
 
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,chatgpt.com
+# --- Google Gemini / AI Studio / DeepMind ---
+DOMAIN-SUFFIX,gemini.google.com,🤖 AI Service
+DOMAIN-SUFFIX,bard.google.com,🤖 AI Service
+DOMAIN-SUFFIX,ai.google.dev,🤖 AI Service
+DOMAIN-SUFFIX,ai.google,🤖 AI Service
+DOMAIN-SUFFIX,aistudio.google.com,🤖 AI Service
+DOMAIN-SUFFIX,makersuite.google.com,🤖 AI Service
+DOMAIN-SUFFIX,deepmind.com,🤖 AI Service
+DOMAIN-SUFFIX,deepmind.google,🤖 AI Service
+DOMAIN-SUFFIX,generativeai.google,🤖 AI Service
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI Service
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🤖 AI Service
+DOMAIN-SUFFIX,notebooklm.google.com,🤖 AI Service
+DOMAIN-SUFFIX,notebooklm.google,🤖 AI Service
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,🤖 AI Service
+DOMAIN-SUFFIX,waa-pa.clients6.google.com,🤖 AI Service
+DOMAIN-KEYWORD,generativelanguage,🤖 AI Service
+DOMAIN-KEYWORD,colab,🤖 AI Service
 
+# --- Microsoft Copilot / Bing AI ---
+DOMAIN-SUFFIX,copilot.microsoft.com,🤖 AI Service
+DOMAIN-SUFFIX,bing.com,🤖 AI Service
+DOMAIN-SUFFIX,bing.net,🤖 AI Service
+DOMAIN-SUFFIX,bingapis.com,🤖 AI Service
+DOMAIN-SUFFIX,edgeservices.bing.com,🤖 AI Service
+DOMAIN-SUFFIX,sydney.bing.com,🤖 AI Service
+DOMAIN-SUFFIX,www.bing.com,🤖 AI Service
+DOMAIN-SUFFIX,www.bingapis.com,🤖 AI Service
+DOMAIN-SUFFIX,platform.bing.com,🤖 AI Service
+DOMAIN-SUFFIX,bat.bing.com,🤖 AI Service
+DOMAIN-SUFFIX,r.bing.com,🤖 AI Service
+DOMAIN-SUFFIX,dict.bing.com.cn,🤖 AI Service
+DOMAIN-SUFFIX,business.bing.com,🤖 AI Service
+DOMAIN-KEYWORD,bing,🤖 AI Service
+DOMAIN-KEYWORD,copilot,🤖 AI Service
+DOMAIN-KEYWORD,edgeassetservice,🤖 AI Service
 
-#claude
-PROCESS-NAME,Claude
-PROCESS-NAME,Claude Helper
-DOMAIN-KEYWORD,claude
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,usefathom.com
+# --- Midjourney (Includes Discord) ---
+DOMAIN-SUFFIX,midjourney.com,🤖 AI Service
+DOMAIN-SUFFIX,discord.com,🤖 AI Service
+DOMAIN-SUFFIX,discordapp.com,🤖 AI Service
+DOMAIN-SUFFIX,discordapp.net,🤖 AI Service
 
-#Cursor + Windsurf
-PROCESS-NAME,Cursor Helper
-PROCESS-NAME,Cursor Helper (Plugin)
-PROCESS-NAME,Windsurf Helper
-PROCESS-NAME,Windsurf Helper (Plugin)
-PROCESS-NAME,language_server
-PROCESS-NAME,language_server_macos_arm
-PROCESS-NAME,copilot-language-server
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,codeium.com
-DOMAIN-SUFFIX,windsurf.com
-DOMAIN-SUFFIX,openrouter.ai
+# --- Grok (xAI) ---
+PROCESS-NAME,grok,🤖 AI Service
+DOMAIN-SUFFIX,x.ai,🤖 AI Service
+DOMAIN-SUFFIX,grok.com,🤖 AI Service
+DOMAIN-KEYWORD,grok,🤖 AI Service
 
-#recraft
-DOMAIN-SUFFIX,recraft.ai
+# --- Perplexity ---
+DOMAIN-SUFFIX,perplexity.ai,🤖 AI Service
+DOMAIN-SUFFIX,pplx.ai,🤖 AI Service
 
-#poe
-DOMAIN-SUFFIX,poe.com
+# --- AI Coding Tools (Cursor, Warp, Zed, Antigravity, Kiro, etc.) ---
+# Warp (Terminal)
+PROCESS-NAME,Warp,🤖 AI Service
+DOMAIN-SUFFIX,warp.dev,🤖 AI Service
+# Zed (Editor)
+PROCESS-NAME,Zed,🤖 AI Service
+DOMAIN-SUFFIX,zed.dev,🤖 AI Service
+# Antigravity (Google IDE)
+DOMAIN-SUFFIX,antigravity.google,🤖 AI Service
+DOMAIN-SUFFIX,antigravity.dev,🤖 AI Service
+# Kiro (AWS AI Editor)
+DOMAIN-SUFFIX,kiro.dev,🤖 AI Service
+DOMAIN-SUFFIX,kiro.ai,🤖 AI Service
+# Cursor / Windsurf / Trae / VS Code AI
+PROCESS-NAME,Cursor Helper,🤖 AI Service
+PROCESS-NAME,Cursor Helper (Plugin),🤖 AI Service
+PROCESS-NAME,Windsurf Helper,🤖 AI Service
+PROCESS-NAME,Windsurf Helper (Plugin),🤖 AI Service
+PROCESS-NAME,Trae Helper,🤖 AI Service
+PROCESS-NAME,Trae Helper (Plugin),🤖 AI Service
+PROCESS-NAME,language_server,🤖 AI Service
+PROCESS-NAME,language_server_macos_arm,🤖 AI Service
+PROCESS-NAME,copilot-language-server,🤖 AI Service
+DOMAIN-SUFFIX,cursor.com,🤖 AI Service
+DOMAIN-SUFFIX,cursor.sh,🤖 AI Service
+DOMAIN-SUFFIX,windsurf.com,🤖 AI Service
+DOMAIN-SUFFIX,codeium.com,🤖 AI Service
+DOMAIN-SUFFIX,marscode.com,🤖 AI Service
+DOMAIN-SUFFIX,trae.ai,🤖 AI Service
+DOMAIN-SUFFIX,openrouter.ai,🤖 AI Service
+DOMAIN-SUFFIX,githubcopilot.com,🤖 AI Service
+DOMAIN-SUFFIX,cocopilot.org,🤖 AI Service
 
-#AugmentCode
-DOMAIN-SUFFIX,augmentcode.com
+# --- ByteDance AI / Oversea (Cici, TikTok, CapCut, Lemon8) ---
+PROCESS-NAME,Cici,🤖 AI Service
+PROCESS-NAME,TikTok,🤖 AI Service
+PROCESS-NAME,CapCut,🤖 AI Service
+PROCESS-NAME,Lemon8,🤖 AI Service
+DOMAIN-SUFFIX,ciciai.com,🤖 AI Service
+DOMAIN-SUFFIX,cici.com,🤖 AI Service
+DOMAIN-SUFFIX,byteoversea.com,🤖 AI Service
+DOMAIN-SUFFIX,tiktok.com,🤖 AI Service
+DOMAIN-SUFFIX,tiktokcdn.com,🤖 AI Service
+DOMAIN-SUFFIX,tiktokv.com,🤖 AI Service
+DOMAIN-SUFFIX,tiktokcdn-us.com,🤖 AI Service
+DOMAIN-SUFFIX,muscdn.com,🤖 AI Service
+DOMAIN-SUFFIX,musical.ly,🤖 AI Service
+DOMAIN-SUFFIX,capcut.com,🤖 AI Service
+DOMAIN-SUFFIX,capcutapi.com,🤖 AI Service
+DOMAIN-SUFFIX,lemon8-app.com,🤖 AI Service
+DOMAIN-SUFFIX,lemon8cdn.com,🤖 AI Service
+DOMAIN-SUFFIX,ibytedtos.com,🤖 AI Service
+DOMAIN-SUFFIX,ipstatp.com,🤖 AI Service
+DOMAIN-SUFFIX,zijieapi.com,🤖 AI Service
+DOMAIN-KEYWORD,ciciai,🤖 AI Service
+DOMAIN-KEYWORD,tiktok,🤖 AI Service
+DOMAIN-KEYWORD,lemon8,🤖 AI Service
 
-#aitools
-PROCESS-NAME,LM Studio
-DOMAIN-SUFFIX,lmsudio.ai
+# --- AI Video & Music & Image (Suno, Udio, Runway, Luma, etc.) ---
+DOMAIN-SUFFIX,suno.com,🤖 AI Service
+DOMAIN-SUFFIX,suno.ai,🤖 AI Service
+DOMAIN-SUFFIX,udio.com,🤖 AI Service
+DOMAIN-SUFFIX,runwayml.com,🤖 AI Service
+DOMAIN-SUFFIX,lumalabs.ai,🤖 AI Service
+DOMAIN-SUFFIX,pika.art,🤖 AI Service
+DOMAIN-SUFFIX,pika.style,🤖 AI Service
+DOMAIN-SUFFIX,recraft.ai,🤖 AI Service
+DOMAIN-SUFFIX,krea.ai,🤖 AI Service
+DOMAIN-SUFFIX,leonardo.ai,🤖 AI Service
+DOMAIN-SUFFIX,civitai.com,🤖 AI Service
 
-#grok
-PROCESS-NAME,grok
-DOMAIN-KEYWORD,grok
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,grok.com
+# --- Other AI Services ---
+DOMAIN-SUFFIX,huggingface.co,🤖 AI Service
+DOMAIN-SUFFIX,hf.co,🤖 AI Service
+DOMAIN-SUFFIX,mistral.ai,🤖 AI Service
+DOMAIN-SUFFIX,meta.ai,🤖 AI Service
+DOMAIN-SUFFIX,imagine.meta.com,🤖 AI Service
+DOMAIN-SUFFIX,poe.com,🤖 AI Service
+DOMAIN-SUFFIX,cerebras.ai,🤖 AI Service
+DOMAIN-SUFFIX,augmentcode.com,🤖 AI Service
+DOMAIN-SUFFIX,lmstudio.ai,🤖 AI Service
+PROCESS-NAME,LM Studio,🤖 AI Service
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,🤖 AI Service
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,🤖 AI Service
+DOMAIN-SUFFIX,apple-relay.apple.com,🤖 AI Service
+DOMAIN-SUFFIX,guzzoni.apple.com,🤖 AI Service
+DOMAIN-SUFFIX,smoot.apple.com,🤖 AI Service
 
-#perplexity.ai
-DOMAIN-SUFFIX,perplexity.ai
+# --- Generic Google Infrastructure ---
+DOMAIN-SUFFIX,googleapis.com,🤖 AI Service
+DOMAIN-SUFFIX,clients6.google.com,🤖 AI Service
+DOMAIN-SUFFIX,gstatic.com,🤖 AI Service
+DOMAIN-SUFFIX,googleusercontent.com,🤖 AI Service
 
-#apple ai
-DOMAIN-SUFFIX,guzzoni.apple.com
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
-DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,cp4.cloudflare.com
-DOMAIN-SUFFIX,apple-relay.apple.com
-
-#bing chat
-DOMAIN-KEYWORD,bing
-DOMAIN-KEYWORD,copilot
-DOMAIN-KEYWORD,edgeassetservice
-DOMAIN-SUFFIX,edgeservices.bing.com
-DOMAIN-SUFFIX,sydney.bing.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,bingapis.com
-DOMAIN-SUFFIX,azurewebsites.net
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,edge.microsoft.com
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,www.bing.com
-DOMAIN-SUFFIX,www.bingapis.com
-DOMAIN-SUFFIX,nav-edge.smartscreen.microsoft.com
-DOMAIN-SUFFIX,bat.bing.com
-DOMAIN-SUFFIX,designerapp.officeapps.live.com
-DOMAIN-SUFFIX,cdn.designerapp.osi.office.net
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,virtualearth.net
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,onenote
-DOMAIN-SUFFIX,hexun.com
-DOMAIN-SUFFIX,dict.bing.com.cn
-DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,variflight.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,msftoffers.com
-DOMAIN-SUFFIX,chinacloudapp.cn
-DOMAIN-SUFFIX,cbsnews.com
-DOMAIN-SUFFIX,swx.cdn.skype.com
-DOMAIN-SUFFIX,swc.cdn.skype.com
-DOMAIN-SUFFIX,latest-swx.cdn.skype.com
-DOMAIN-SUFFIX,a.config.skype.com
-DOMAIN-SUFFIX,b.config.skype.com
-DOMAIN-SUFFIX,platform.bing.com
-DOMAIN-SUFFIX,microsofttranslator.com
-DOMAIN-SUFFIX,facebook.net
-DOMAIN-SUFFIX,delve.office.com
-DOMAIN-SUFFIX,uservoice.com
-DOMAIN-SUFFIX,cdn.office.net
-DOMAIN-SUFFIX,platform.twitter.com
-DOMAIN-SUFFIX,cdn.syndication.twimg.com
-DOMAIN-SUFFIX,spoprod-a.akamaihd.net
-DOMAIN-SUFFIX,bingstatic.com
-DOMAIN-SUFFIX,yahoo.co.jp
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN-SUFFIX,r.msftstatic.com
-DOMAIN-SUFFIX,rafd.bing.com
-DOMAIN-SUFFIX,rafd.staging-bing-int.com
-DOMAIN-SUFFIX,raka.bing.com
-DOMAIN-SUFFIX,r.bing.com
-DOMAIN-SUFFIX,r.staging-bing-int.com
-DOMAIN-SUFFIX,raka.staging-bing-int.com
-DOMAIN-SUFFIX,rcf.staging-bing-int.com
-DOMAIN-SUFFIX,rcf.bing.com
-DOMAIN-SUFFIX,s.cn.bing.net
-DOMAIN-SUFFIX,xpaycdn-int.azureedge.net
-DOMAIN-SUFFIX,xpaycdn.azureedge.net
-DOMAIN-SUFFIX,ssl.kaptcha.com
-DOMAIN-SUFFIX,tst.kaptcha.com
-DOMAIN-SUFFIX,snrproxy.binginternal.com
-DOMAIN-SUFFIX,snrproxyeast.binginternal.com
-DOMAIN-SUFFIX,snrproxync.binginternal.com
-DOMAIN-SUFFIX,snrproxysc.binginternal.com
-DOMAIN-SUFFIX,snrproxywest.binginternal.com
-DOMAIN-SUFFIX,cetonc.binginternal.com
-DOMAIN-SUFFIX,cetosc.binginternal.com
-DOMAIN-SUFFIX,cetoeast.binginternal.com
-DOMAIN-SUFFIX,cetowest.binginternal.com
-DOMAIN-SUFFIX,akam.bing.com
-DOMAIN-SUFFIX,akam.staging-bing-int.com
-DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxyeast.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxync.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxysc.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxywest.staging-bing-int.com
-DOMAIN-SUFFIX,cjfdbemmaeeohgibnhdhlakiahifjjcf
-DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com
-DOMAIN-SUFFIX,bngpiglbalmenaabohcooocpnljgfemj
-DOMAIN-SUFFIX,rwww.bing.com
-
-
-#Google Gemini 
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,makersuite.google.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,ai.google
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,waa-pa.clients6.google.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,people-pa.clients6.google.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,clients6.google.com
-
-# 内容：Google
-# 数量：24条
-# DOMAIN-KEYWORD,gmail
-# DOMAIN-KEYWORD,google
-# DOMAIN-SUFFIX,1e100.net
-# DOMAIN-SUFFIX,2mdn.net
-# DOMAIN-SUFFIX,app-measurement.net
-# DOMAIN-SUFFIX,g.co
-# DOMAIN-SUFFIX,ggpht.com
-# DOMAIN-SUFFIX,goo.gl
-# DOMAIN-SUFFIX,googleapis.cn
-# DOMAIN-SUFFIX,googleapis.com
-# DOMAIN-SUFFIX,gstatic.cn
-# DOMAIN-SUFFIX,gstatic.com
-# DOMAIN-SUFFIX,gvt0.com
-# DOMAIN-SUFFIX,gvt1.com
-# DOMAIN-SUFFIX,gvt2.com
-# DOMAIN-SUFFIX,gvt3.com
-# DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-# DOMAIN-SUFFIX,youtu.be
-# DOMAIN-SUFFIX,youtube-nocookie.com
-# DOMAIN-SUFFIX,youtube.com
-# DOMAIN-SUFFIX,yt.be
-# DOMAIN-SUFFIX,ytimg.com
-# IP-CIDR,74.125.0.0/16,no-resolve
-# IP-CIDR,173.194.0.0/16,no-resolve
-
-# 内容：GoogleCN
-# 数量：29条
-DOMAIN-SUFFIX,265.com
-DOMAIN-SUFFIX,2mdn.net
-DOMAIN-SUFFIX,alt1-mtalk.google.com
-DOMAIN-SUFFIX,alt2-mtalk.google.com
-DOMAIN-SUFFIX,alt3-mtalk.google.com
-DOMAIN-SUFFIX,alt4-mtalk.google.com
-DOMAIN-SUFFIX,alt5-mtalk.google.com
-DOMAIN-SUFFIX,alt6-mtalk.google.com
-DOMAIN-SUFFIX,alt7-mtalk.google.com
-DOMAIN-SUFFIX,alt8-mtalk.google.com
-DOMAIN-SUFFIX,app-measurement.com
-DOMAIN-SUFFIX,cache.pack.google.com
-DOMAIN-SUFFIX,clickserve.dartsearch.net
-DOMAIN-SUFFIX,crl.pki.goog
-DOMAIN-SUFFIX,dl.google.com
-DOMAIN-SUFFIX,dl.l.google.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googletagservices.com
-DOMAIN-SUFFIX,gtm.oasisfeng.com
-DOMAIN-SUFFIX,mtalk.google.com
-DOMAIN-SUFFIX,ocsp.pki.goog
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-SUFFIX,safebrowsing-cache.google.com
-DOMAIN-SUFFIX,settings.crashlytics.com
-DOMAIN-SUFFIX,ssl-google-analytics.l.google.com
-DOMAIN-SUFFIX,toolbarqueries.google.com
-DOMAIN-SUFFIX,tools.google.com
-DOMAIN-SUFFIX,tools.l.google.com
-DOMAIN-SUFFIX,www-googletagmanager.l.google.com
-
-# 内容：GoogleEarth 谷歌地球
-# 数量：16条
-DOMAIN-SUFFIX,earth-pa.clients6.google.com
-DOMAIN-SUFFIX,earth.google.com
-DOMAIN-SUFFIX,kh.google.com
-DOMAIN-SUFFIX,khm.google.com
-DOMAIN-SUFFIX,khm.googleapis.com
-DOMAIN-SUFFIX,khm0.google.com
-DOMAIN-SUFFIX,khm0.googleapis.com
-DOMAIN-SUFFIX,khm1.google.com
-DOMAIN-SUFFIX,khm1.googleapis.com
-DOMAIN-SUFFIX,khm2.google.com
-DOMAIN-SUFFIX,khm2.googleapis.com
-DOMAIN-SUFFIX,khm3.google.com
-DOMAIN-SUFFIX,khm3.googleapis.com
-DOMAIN-SUFFIX,khmdb.google.com
-DOMAIN-SUFFIX,khmdb.googleapis.com
-DOMAIN-SUFFIX,mw1.google.com
-
-# 内容：GoogleFCM 谷歌推送服务
-# 数量：35条
-DOMAIN,alt1-mtalk.google.com
-DOMAIN,alt2-mtalk.google.com
-DOMAIN,alt3-mtalk.google.com
-DOMAIN,alt4-mtalk.google.com
-DOMAIN,alt5-mtalk.google.com
-DOMAIN,alt6-mtalk.google.com
-DOMAIN,alt7-mtalk.google.com
-DOMAIN,alt8-mtalk.google.com
-DOMAIN,mtalk.google.com
-IP-CIDR,64.233.177.188/32,no-resolve
-IP-CIDR,64.233.186.188/32,no-resolve
-IP-CIDR,64.233.187.188/32,no-resolve
-IP-CIDR,64.233.188.188/32,no-resolve
-IP-CIDR,64.233.189.188/32,no-resolve
-IP-CIDR,74.125.23.188/32,no-resolve
-IP-CIDR,74.125.24.188/32,no-resolve
-IP-CIDR,74.125.28.188/32,no-resolve
-IP-CIDR,74.125.127.188/32,no-resolve
-IP-CIDR,74.125.137.188/32,no-resolve
-IP-CIDR,74.125.203.188/32,no-resolve
-IP-CIDR,74.125.204.188/32,no-resolve
-IP-CIDR,74.125.206.188/32,no-resolve
-IP-CIDR,108.177.125.188/32,no-resolve
-IP-CIDR,142.250.4.188/32,no-resolve
-IP-CIDR,142.250.10.188/32,no-resolve
-IP-CIDR,142.250.31.188/32,no-resolve
-IP-CIDR,142.250.96.188/32,no-resolve
-IP-CIDR,172.217.194.188/32,no-resolve
-IP-CIDR,172.217.218.188/32,no-resolve
-IP-CIDR,172.217.219.188/32,no-resolve
-IP-CIDR,172.253.63.188/32,no-resolve
-IP-CIDR,172.253.122.188/32,no-resolve
-IP-CIDR,173.194.175.188/32,no-resolve
-IP-CIDR,173.194.218.188/32,no-resolve
-IP-CIDR,209.85.233.188/32,no-resolve
+# --- IP-CIDR Rules ---
+IP-CIDR,64.233.177.188/32,🤖 AI Service,no-resolve
+IP-CIDR,142.250.0.0/15,🤖 AI Service,no-resolve

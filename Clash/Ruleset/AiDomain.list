@@ -23,6 +23,8 @@ DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,chatgpt
+PROCESS-NAME,ChatGPTHelper
+PROCESS-NAME,ChatGPT
 
 # --- Claude (Anthropic) ---
 PROCESS-NAME,Claude
@@ -99,9 +101,18 @@ DOMAIN-SUFFIX,kiro.dev
 DOMAIN-SUFFIX,kiro.ai
 # Antigravity (Google)
 DOMAIN-SUFFIX,antigravity.google
+PROCESS-NAME,Antigravity Helper (Plugin)
+PROCESS-NAME,Antigravity Helper
+PROCESS-NAME,Antigravity
+PROCESS-NAME,cloudcode_cli
+DOMAIN-KEYWORD,antigravity
+
 # Cursor / Windsurf / Trae / VS Code AI
 PROCESS-NAME,Cursor Helper
 PROCESS-NAME,Cursor Helper (Plugin)
+PROCESS-NAME,Cursor
+DOMAIN-KEYWORD,cursor
+
 PROCESS-NAME,Windsurf Helper
 PROCESS-NAME,Windsurf Helper (Plugin)
 PROCESS-NAME,Trae Helper

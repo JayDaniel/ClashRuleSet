@@ -5,7 +5,8 @@ DOMAIN-SUFFIX,1drv.ms
 DOMAIN-SUFFIX,grammarly.io
 DOMAIN-SUFFIX,shodan.io
 DOMAIN-SUFFIX,fontawesome.com
-DOMAIN-SUFFIX,getepic.com
+DOMAIN-SUFFIX,hotel-solution.com 
+
 
 DOMAIN-SUFFIX,1password.com
 DOMAIN-SUFFIX,adguard.org
@@ -38,7 +39,6 @@ DOMAIN-SUFFIX,jp
 DOMAIN-SUFFIX,kr
 DOMAIN-SUFFIX,sg
 DOMAIN-SUFFIX,tw
-DOMAIN-SUFFIX,uk
 DOMAIN-SUFFIX,us
 DOMAIN-SUFFIX,ca
 
@@ -585,7 +585,6 @@ DOMAIN-SUFFIX,bastillepost.com
 DOMAIN-SUFFIX,bayvoice.net
 DOMAIN-SUFFIX,baywords.com
 DOMAIN-SUFFIX,bb-chat.tv
-DOMAIN-SUFFIX,bbc.co.uk
 DOMAIN-SUFFIX,bbc.com
 DOMAIN-SUFFIX,bbc.in
 DOMAIN-SUFFIX,bbcchinese.com

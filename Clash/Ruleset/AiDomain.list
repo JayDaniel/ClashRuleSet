@@ -26,6 +26,26 @@ DOMAIN-KEYWORD,chatgpt
 PROCESS-NAME,ChatGPTHelper
 PROCESS-NAME,ChatGPT
 
+# --- OpenAI / ChatGPT 额外依赖（推荐） ---
+# A/B 实验 & 配置平台
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,openaimerge.com
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,featureassets.org
+
+# 配置 / 身份 / 登录相关第三方
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,workoscdn.com
+DOMAIN-SUFFIX,sendgrid.net   # *.ct.sendgrid.net 用于通知 / 邮件链接
+
+# 监控 / 实验 / 性能
+DOMAIN-SUFFIX,datadoghq.com  # rum.browser-intake-datadoghq.com
+DOMAIN-SUFFIX,launchdarkly.com
+
+# 支付（如果你要用 ChatGPT 付款页面，建议放行）
+DOMAIN-SUFFIX,stripe.com     # js.stripe.com 等
+
 # --- Claude (Anthropic) ---
 PROCESS-NAME,Claude
 PROCESS-NAME,Claude Helper
@@ -93,12 +113,15 @@ DOMAIN-SUFFIX,pplx.ai
 # Warp (Terminal)
 PROCESS-NAME,Warp
 DOMAIN-SUFFIX,warp.dev
+
 # Zed (Editor)
 PROCESS-NAME,Zed
 DOMAIN-SUFFIX,zed.dev
+
 # Kiro (AWS AI Editor)
 DOMAIN-SUFFIX,kiro.dev
 DOMAIN-SUFFIX,kiro.ai
+
 # Antigravity (Google)
 DOMAIN-SUFFIX,antigravity.google
 PROCESS-NAME,Antigravity Helper (Plugin)
@@ -107,28 +130,41 @@ PROCESS-NAME,Antigravity
 PROCESS-NAME,cloudcode_cli
 DOMAIN-KEYWORD,antigravity
 
-# Cursor / Windsurf / Trae / VS Code AI
+# --- Cursor ---
 PROCESS-NAME,Cursor Helper
 PROCESS-NAME,Cursor Helper (Plugin)
 PROCESS-NAME,Cursor
 DOMAIN-KEYWORD,cursor
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+# --- Cursor 额外域名（可选） ---
+DOMAIN-SUFFIX,cursor-ide.com
+DOMAIN-SUFFIX,cursor.zone
 
+# --- Windsurf ---
 PROCESS-NAME,Windsurf Helper
 PROCESS-NAME,Windsurf Helper (Plugin)
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+
+# --- Trae ---
 PROCESS-NAME,Trae Helper
 PROCESS-NAME,Trae Helper (Plugin)
+DOMAIN-SUFFIX,trae.ai
+
+# --- VS Code AI / Copilot / 其它编辑器 AI 插件 ---
 PROCESS-NAME,language_server
 PROCESS-NAME,language_server_macos_arm
 PROCESS-NAME,copilot-language-server
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,windsurf.com
-DOMAIN-SUFFIX,codeium.com
-DOMAIN-SUFFIX,marscode.com
-DOMAIN-SUFFIX,trae.ai
-DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,cocopilot.org
+DOMAIN-SUFFIX,marscode.com
+DOMAIN-SUFFIX,openrouter.ai
+
+# --- factory droid ---
+PROCESS-NAME,Factory Bridge Helper
+PROCESS-NAME,factory-mcp-bridge
+DOMAIN-SUFFIX,factory.ai
 
 # --- ByteDance AI / Oversea (Cici, TikTok, CapCut, Lemon8) ---
 PROCESS-NAME,Cici
